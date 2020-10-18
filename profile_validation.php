@@ -1,5 +1,11 @@
 <?php
 session_start();
+if(isset($_SESSION['name'])) {
+  if(time()-$_SESSION['login_time_stamp'] > 60){
+    session_destroy();
+    header("Location: signin.php");
+  }
+}
   $id = $_SESSION['id'];
   $errors = array('number1'=>'','number2'=>'');
   $success = $number1 = $number2 = '';

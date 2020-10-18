@@ -12,6 +12,7 @@
  	{
  		
  		session_start();
+ 		 $_SESSION['login_time_stamp'] = time();
  		$_SESSION['name'] = $user['name'];
  		$_SESSION['email'] = $user['email'];
  		$_SESSION['password'] = $user['password'];
