@@ -1,0 +1,14 @@
+.content{
+	width:60%;
+	margin:auto;
+}
+h3{
+	text-align: center;
+}
+.error {
+	color:red;
+}
+.success{
+	color:green;
+	float:right;
+}
